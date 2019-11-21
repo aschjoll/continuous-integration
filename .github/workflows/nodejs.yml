@@ -12,10 +12,10 @@ jobs:
     - name: Checking out most recent version of code
       uses: actions/checkout@v1
       
-    - name: Using Node.js 10.16.3
+    - name: Using Node.js 10.x
       uses: actions/setup-node@v1
       with:
-        node-version: 10.16.3
+        node-version: 10.x
         
     - name: Clean npm install
       run: npm ci
